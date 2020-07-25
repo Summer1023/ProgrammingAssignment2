@@ -2,7 +2,7 @@
 makeCacheMatrix <- function(x=matrix(),...){
        m<-NULL
        set<-function(y){
-               x<<-y #用<<-可以可以使起在赋值行为均在environment hierarchy上进行
+               x<<-y 
                m<<-NULL
        }
        get<-function() x
